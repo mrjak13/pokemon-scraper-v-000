@@ -11,9 +11,8 @@ class Pokemon
   end
 
   def self.save(name, type, db)
-    
-    db.execute("INSERT INTO pokemon(name, type) VALUES(?, ?)
-    WHERE name == ?", name, type, name)
+
+    db.execute("INSERT INTO pokemon(name, type) VALUES(?, ?)", name, type)
   end
 
   def self.find(id, db)
@@ -22,7 +21,7 @@ class Pokemon
   end
 
   def alter_hp(hp)
-    
+
   end
 
 end
