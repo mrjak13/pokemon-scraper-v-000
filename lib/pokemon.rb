@@ -11,8 +11,8 @@ class Pokemon
   end
 
   def self.save(name, type, db)
-    binding.pry
-    db.execute("INSERT INTO IF NONE EXISTS pokemon(name, type) VALUES(?, ?)
+    
+    db.execute("INSERT INTO pokemon(name, type) VALUES(?, ?)
     WHERE name == ?", name, type, name)
   end
 
@@ -22,8 +22,7 @@ class Pokemon
   end
 
   def alter_hp(hp)
-    binding.pry
-
+    
   end
 
 end
