@@ -22,7 +22,7 @@ class Pokemon
   def alter_hp(hp, db)
     binding.pry
     db.execute("UPDATE pokemon SET hp = ?
-    WHERE hp = 60", hp)
+    WHERE name = ?", hp, name)
     # @hp = hp
 
   end
