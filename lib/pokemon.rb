@@ -21,6 +21,7 @@ class Pokemon
 
   def alter_hp(hp, db)
     binding.pry
+    @hp = hp
 
   end
 
